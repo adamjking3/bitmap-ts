@@ -16,7 +16,7 @@ OR
 ```
 import { Bitmap } from 'bitmap-ts';
 
-public handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file: File = event.target.files![0];
     const bmp = new Bitmap(file);
 
